@@ -6,7 +6,7 @@ export default async function NotePage({
   const { slug } = await params;
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full overflow-auto">
       <div
         className="max-w-6xl mx-auto mt-4 mb-10 p-5 outline-0"
         contentEditable

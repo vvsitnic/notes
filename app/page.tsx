@@ -1,8 +1,17 @@
+import { CirclePlus, Search } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="h-screen w-full">
+      <div className="flex items-center justify-center">
+        <div className="flex items-center gap-2 border border-gray-300 px-4 py-1 rounded-full text-md text-gray-800 mt-6">
+          <input type="text" placeholder="Search Note" className="outline-0" />{" "}
+          <button className="cursor-pointer">
+            <Search className="size-5" />
+          </button>
+        </div>
+      </div>
       <div className="max-w-6xl mx-auto mt-4 mb-10 p-5 grid grid-cols-2 gap-x-2 gap-y-4">
         <Card />
         <Card />
@@ -10,11 +19,11 @@ export default function Home() {
         <Card />
       </div>
       <div className="flex items-center justify-center">
-        <button className="bg-gray-200 hover:bg-gray-300 px-4 py-1 rounded-lg inline-block text-sm text-gray-800 cursor-pointer">
-          New Note
+        <button className="bg-gray-200 hover:bg-gray-300 px-4 py-1 rounded-lg flex items-center gap-1 text-sm text-gray-800 cursor-pointer">
+          <p>New Note</p>
+          <CirclePlus className="inline-block size-4" />
         </button>
       </div>
-      <div className="h-full"></div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { PenLine } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -31,8 +32,9 @@ export default function Header() {
           Notes
         </Link>
       </div>
-      <button className="bg-gray-200 hover:bg-gray-300 px-4 py-1 rounded-lg inline-block text-sm text-gray-800 cursor-pointer">
-        New Note
+      <button className="bg-gray-200 hover:bg-gray-300 px-4 py-1 rounded-lg flex items-center gap-1 text-sm text-gray-800 cursor-pointer">
+        <p>New Note</p>
+        <PenLine className="inline-block size-4" />
       </button>
     </header>
   );
