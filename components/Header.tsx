@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 p-3 xl:px-10 w-full bg-white shadow-sm z-50 flex justify-between">
+    <header className="sticky top-0 p-3 xl:px-10 w-full bg-white shadow-sm z-20 flex justify-between">
       <div className="flex items-center gap-2">
         <Link
           href="/profile/"

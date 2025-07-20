@@ -5,6 +5,7 @@ export default async function NotePage({
 }) {
   const { slug } = await params;
 
+  // TODO: MB FIX STICKY HEADBAR THAT MAKES CONTAINER OVERFLOX Y AXIS!!
   return (
     <div className="h-screen w-full overflow-auto">
       <div

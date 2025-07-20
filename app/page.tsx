@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div className="h-screen w-full">
       <div className="flex items-center justify-center">
+        {/* TODO: MAKE IT FLOW OVER HEADER WHEN SCROLLING AND NOT UGLY */}
         <div className="flex items-center gap-2 border border-gray-300 px-4 py-1 rounded-full text-md text-gray-800 mt-6">
           <input type="text" placeholder="Search Note" className="outline-0" />{" "}
           <button className="cursor-pointer">

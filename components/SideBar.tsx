@@ -1,6 +1,6 @@
 "use client";
 
-import { EyeOff, Undo2 } from "lucide-react";
+import { EyeOff, Search, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,14 +22,22 @@ export default function SideBar() {
   //   }, []);
 
   return (
-    <div className="shrink-0 w-3xs h-screen bg-white shadow-sm z-40 py-3 px-2 flex flex-col">
+    <div className="shrink-0 w-3xs h-screen bg-white shadow-sm py-3 px-2 flex flex-col gap-3">
       <Link
         href="/"
-        className="flex items-center gap-2 bg-gray-100 hover:bg-gray-300 px-3 py-1 rounded-lg mb-3 transition-colors"
+        className="flex items-center gap-2 bg-gray-100 hover:bg-gray-300 px-3 py-1 rounded-lg transition-colors"
       >
         <Undo2 className="inline-block size-5" />
         <p>Back</p>
       </Link>
+      <div className="flex items-center gap-2 border-b px-2 py-2 border-gray-300 text-sm">
+        <Search className="size-4" />
+        <input
+          type="text"
+          className="outline-0"
+          placeholder="Search your notes..."
+        />
+      </div>
       <div className="flex flex-col">
         <SideBarNavLink href="/note/1" name="note 1" />
         <SideBarNavLink href="/note/2" name="note 2" />
